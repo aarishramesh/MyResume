@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Aarish Ramesh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://aarish.in}{\Large Aarish Ramesh}} & Email : \href{mailto:aarish@aarish.in}{aarish@aarish.in}\\
+  \href{}{} & Mobile : +91-9940086828\\ \href{http://aarish.in/}{www.aarish.in} & \href{https://stackoverflow.com/cv/aarishr}{www.stackoverflow.com/cv/aarishr}\\
+  \href{https://github.com/aarishramesh}{www.github.com/aarishramesh} & \href{https://www.linkedin.com/in/aarish-ramesh-363a4435/}{www.linkedin.com/in/aarishramesh}
+  \end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://bits-pilani-wilp.ac.in/}{Birla Institute of Technology and Science}}{Pilani, India}
+      {Master of Science in Software Systems, Work Integrated Learning Programme;  CGPA: 7.8/10}{June. 2014 -- May. 2016}
+    \resumeSubheading
+      {\href{http://www.ssn.edu.in/}{SSN College of Engineering, Anna University}}{Chennai, India}
+      {Bachelor of Engineering in Electronics and Communication;  CGPA: 8.3/10}{Aug. 2009 -- July 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {\href{www.cleartrip.com}{Cleartrip}}{Bangalore, India}
+      {Senior Software Engineer}{Oct 2017 - Present}
+      \resumeItemListStart
+          \resumeItem{\href{https://suite.cleartrip.com/login}{Cleartrip Hoteliers Platform}}
+          {Contributed to the Architecture, Design and Development of Cleartrip Hotels channel managers platform V2 as a microservice thus improving the application's performance, scalability and robustness. \mbox{}\\
+          \textit{Stack : Java 8, Springboot, JUnit, OracleDB, Redis, Maven, Jenkins, Docker, Kubernetes, NewRelic, ELK, CleverTap}}
+          \resumeItem{\href{https://www.cleartrip.com/hotels}{Cleartrip Hotels Application Revamp}}
+          {Revamped the core search, book, cancel and refund flows of Cleartrip hotels application. Achieved 2x in performance by performing stored procedure, DB query and caching optimisations. Evaluated elastic search for search implementation  \mbox{}\\ \textit{Stack : Java 8, SpringMVC 3.0, TestNG, OracleDB, Redis, Ant, Go, ELK, CleverTap}}
+          \resumeItem{\href{https://www.cleartrip.com/local}{Cleartrip Locals search service}}
+          {Re-built Cleartrip local search service end to end as a dockerised Spring-boot application moving it from Spring 4.0 \mbox{}\\ \textit{Stack : Java 8, Springboot, JUnit, ElasticSearch, Kafka, Gradle, Jenkins, Docker, Kubernetes, NewRelic, ELK}}
+          \resumeItem{\href{https://www.concur.co.in/travel-management}{SAP Concur Integration}}
+          {Contributed to the development of an adapter service to integrate Cleartrip hotels application with one of the API partners, Concur. Resulted in higher number of segments benefiting business}
+          \resumeItem{Hotels Cache Restructuring}
+          {Restructured the coarse grained search cache layer of hotels application by adopting a fine grained approach. Achieved 10 times gain in search page load time performance}
+          \resumeItem{Cleartrip Hiring Panel}
+          {Performed interview duties regularly evaluating candidates in problem solving, In-house coding and design rounds as a core member of hiring panel}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{http://www.keastone.com/}{Keastone Software Labs}}{Bangalore, India}
+      {Senior Software Engineer}{Oct 2016 - Oct 2017}
+      \resumeItemListStart
+          \resumeItem{IRIIIS Backend Architecture and Design}
+          {Contributed to the overall backend architecture and design of the product IRIIIS, a productivity and collaboration product of Keastone on the lines of Slack, Basecamp }
+          \resumeItem{REST based Microservices development}
+          {Designed and developed REST based Java microservice applications for utility services like Mail, Notes, Drive in IRIIIS using Java frameworks. Also contributed to the development of utility services like task, search\mbox{}\\
+          \textit{Stack : Java 8, Springboot, Dropwizard, SparkJava, JUnit, Maven, Jenkins, AWS(all services), ELK}}
+          \resumeItem{Third party product integrations}
+          {Developed integrations for third-party products like Google drive, Evernote with IRIIIS using OAuth\mbox{}\\
+          \textit{Stack : Java 8, Springboot,Dropwizard, SparkJava, JUnit, Maven, Jenkins, AWS(all services), ELK}}
+          \resumeItem{Performance and Scalability of microservices}
+          {Improved the performance of microservices by performing design, coding and query optimisations. Worked on the scalability aspects by performing effective memory tuning for the microservices}
+          \resumeItem{Code review and Coding standards}
+          {Framed the internal peer code-review process. Also internally adopted coding standard tools like FindBugs, PMD, CheckStyle}
+          \resumeItem{DevOps contributions}
+          {Set up and maintained jenkins CI/CD pipeline internally for the organisation in both staging and production environments}
+           \resumeItem{Centralized Logging and Monitoring}
+          {Designed and developed centralized logging system using ELK stack (Elastic search, Logstash and Kibana) in development and production environments. Performed application monitoring by integrating elast-alert, metric-beat and heart-beat plugins into the ELK stack}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{www.zoho.com}{Zoho}}{Chennai, India}
+      {Member Technical Staff, \href{https://mail.zoho.com/}{Zoho Mail}}{June 2013 - Oct 2016}
+      \resumeItemListStart
+        \resumeItem{Mail Server Contributions}
+          {Senior core member of Mail Server team. Developed and maintained the modules related to end to end delivery of emails. Also contributed to Kernel, Library and Storage modules of Zoho Mail}
+        \resumeItem{Refactoring of Mail Server codebase using Filter notification design pattern}
+          {Contributed to the improvement of performance, readability and maintainability of mail server codebase by refactoring using Filter notification design pattern}
+        \resumeItem{Priority delayed queue based implementation for Mail server tasks}
+          {Performed the design overhaul for Mail forwarding, MxLookup and Email routing systems using Hbase priority delayed queue over cron based implementation. Hbase is chosen over cassandra after performance study due to scalability reasons}
+        \resumeItem{\href{https://www.zoho.com/campaigns/help/how-to-authenticate-domain.html}{Email authentication techniques development}}
+          {Designed and developed the following email authentication systems, DKIM Signer and Validation systems according to RFC 6376 and DMARC Validation system according to RFC 7489 to protect users against spam}
+        \resumeItem{Netty framework for POP Protocol servers}
+          {Improved the performance of POP protocol servers 4x by moving to Netty, an asynchronous event driven framework for pop request handling from Java NIO based implementation}
+        \resumeItem{Caching framework optimisations}
+          {Optimised caching framework with 10x storage performance benefits by employing Protocol buffers for serialising POJOs for storing in memcache considering their performance benefits over native Java serialisation. Also evaluated Redis for caching framework}
+        \resumeItem{Stats framework and Zoho Reports integration}
+          {Built a stats framework to obtain day to day statistics of various features of Zoho Mail. Integrated it with Zoho reports for visual presentation and report generation for analytics}
+          
+         
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming SkillSet}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Expertise in Java with good amount of exposure to Python, Ruby, Shell script, PLSQL, Jruby, Lua, Go, Matlab, JavaScript, HTML, CSS}
+    \resumeSubItem{Frameworks}{J2EE, SpringMVC, Spring boot, Hibernate, Servlets, DropWizard, Struts, SparkJava, Netty, JUnit, Jmeter, TestNG, Mockito, NodeJs, AngularJs}
+    \resumeSubItem{Technologies}{JVM, REST, SOAP, ElasticSearch, Kafka, ELK Stack, AWS, Jenkins, Go, Maven, Gradle, Groovy, Ant, Docker, Kubernetes, Hysterix, Spring cloud, Linux, API Gateway, Load balancer, CDN, Firewall, DNS}
+    \resumeSubItem{Storage Systems}{MySql, OracleDB, Postgres, Mongodb, Redis, Memcache, Cassandra, HBase, Hadoop, Neo4j, RabbitMQ, DynamoDB, HDFS}
+     \resumeSubItem{Application/Web Servers}{Tomcat, Apache, Jetty, Nginx}
+     
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+
+\section{Extracurricular and Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Open Source Contributer and Competitive Programmer}
+      {Avid open source contributor and Stack Exchange community user. Actively engaged in competitive programming in \href{}{TopCoder}, \href{}{CodeForces} and \href{}{HackerRank}}
+    \resumeSubItem{Save the Hacker Hackathon}
+      {Developed Caza - NLP based gift suggesting App with my teammates in Save the
+Hacker hackathon organized by FreshWorks and got placed as one among top five web-apps out of 400 web-app entries}
+    \resumeSubItem{Zoho Mail hackathon}
+      {Developed Scheduled email feature in an internal hackathon organized within Zoho Mail secured first place out of 10 teams}
+    \resumeSubItem{Sprint SuperStar}
+      {Awarded with Sprint super-star title in Keastone for exceptional work during one of the sprints}
+    \resumeSubItem{Merit Scholarship}
+      {Secured merit scholarship during first year of UG college study}
+      \resumeSubItem{Hobbies}
+      {Crossfit, Football, Cricket, Guitar, {\href{https://www.chess.com/member/aarish24}{Chess}}, Music}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
